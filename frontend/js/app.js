@@ -306,6 +306,7 @@ async function mint() {
   const spinner = '<div class="dot-elastic"></div><span>Waiting for transaction...</span>';
   mintButton.innerHTML = spinner;
 
+  const mintPrice = 100000000000000000;
   const amount = parseInt(document.getElementById("mintInput").value);
   const value = BigInt(mintPrice) * BigInt(amount);
   const publicMintActive = await contract.methods.mintingActive().call();
