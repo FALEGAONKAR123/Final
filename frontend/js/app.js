@@ -165,6 +165,7 @@ async function loadInfo() {
   const mintContainer = document.getElementById("mintContainer");
   const mintButton = document.getElementById("mintButton");
   const spinner = document.getElementById("spinner");
+  const mintPrice = '10000';
 
   let startTime = "";
   if (publicMintActive) {
