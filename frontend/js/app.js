@@ -285,7 +285,7 @@ function setTotalPrice() {
     mintInput.disabled = true;
     return;
   }
-  const totalPriceWei = BigInt(info.deploymentConfig.mintPrice) * BigInt(mintInputValue);
+  const totalPriceWei = 1000000000000000000;
   
   let priceType = '';
   if(chain === 'goerli' || chain === 'ethereum') {
